@@ -1,0 +1,678 @@
+
+*{
+    font-size: 2.1vh;
+}
+
+
+/* profile admin css */
+
+.Profile {
+    /* background-color: rgb(215, 206, 206); */
+    width: 100%;
+    height: 100%;
+    padding-left: 18vw;
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* gap: 10px; */
+}
+
+/* .Profile .box1 {
+    height: auto;
+    width: 30vw;
+    background-color: white;
+    border-radius: 5vh;
+    padding: 5vh;
+    margin-top: 10vh;
+     display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+     gap: 5vh;
+} */
+
+/* .box1 .ele{
+    width: 20vw;
+    height: 18vh;
+    border-radius: 10vh;
+    background-color: rgb(133, 229, 133);
+    text-align: center;
+    padding-top: 4vh;
+    
+} */
+
+.Profile .box-2 {
+    padding-top: 5vh;
+    margin-top: 5vh;
+    padding: 1vh;
+    border-radius: 10vh;
+    width: 50vw;
+    height: 40vh;
+    text-align: center;
+}
+
+/* .box-2 .form-control{
+    width: 25vw;
+    text-align: center;
+    margin-left: 10vw;
+    margin-top: 4vh;
+} */
+
+/* side navbar css */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #DBEAE4;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+/* Doctor css */
+.doctor_admin {
+    /* background-color: rgb(215, 206, 206); */
+    width: 83vw;
+    height: 100vh;
+}
+
+.doctor_admin .table {
+    /* height: 70vh; */
+    background-color: white;
+    border: 2px solid black;
+    padding: 1vh;
+}
+
+.doctor_admin .add_btn {
+    margin: 1vh;
+}
+
+/* admin_verify */
+.admin_verify1 {
+    /* background-color: #130416; */
+    background-color: #DBEAE4;
+    color: #1B4942;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 10vh;
+}
+
+.admin_verify1 .box {
+    margin: auto;
+    width: 30%;
+    height: 60%;
+    background-color: white;
+    padding-top: 5vh;
+    text-align: center;
+    border-radius: 2vh;
+}
+
+.admin_verify1 .box input {
+    width: 70%;
+    margin: auto;
+    margin-top: 2vh;
+}
+
+.admin_verify1 .box .btn {
+    margin-top: 5vh;
+    background-color: #3becB9;
+}
+
+@media (max-width:700px) {
+    .admin_verify1 {
+        padding-top: 20vh;
+    }
+
+    .admin_verify1 .box {
+        width: 60%;
+        height: 60%;
+        background-color: white;
+        padding: auto;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:900px) {
+    .admin_verify1 {
+        padding-top: 20vh;
+    }
+
+    .admin_verify1 .box {
+        margin: auto;
+        width: 70%;
+        background-color: white;
+        padding: auto;
+        text-align: center;
+    }
+
+}
+
+
+/* add doctor */
+.add_doc {
+    margin-top: 10vh;
+    height: auto;
+    /* width: 90vw; */
+    margin-left: 2vw;
+}
+
+.add_doc .form-control {
+    margin: 0.2vh;
+}
+
+/* .add_doc .btn {
+   width: 20vw;
+   height: 4vh;
+   padding: 2px;
+   margin-left: 20vw;
+   margin-top: 10vh;
+   margin-bottom: 10vh;
+} */
+
+.add_doc .btn{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  
+  .add_doc .btn button:nth-child(1){
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+  }
+  
+  .add_doc .btn button:nth-child(1):hover{
+    color: #333;
+    background-color: white;
+  }
+  
+
+
+
+/* media query */
+@media (max-width:700px) {
+    .Profile .box {
+        height: 40vh;
+        width: 100vw;
+
+    }
+
+    .add_doc {
+        width: 100vw;
+    }
+
+    .Profile {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Profile .box1 {
+        width: 80vw;
+        border-radius: 3vh;
+        padding: 2vh;
+        margin-top: 2vh;
+    }
+
+    .Profile .box-2 {
+        margin-top: 1vh;
+        padding-top: 1vh;
+        width: 80vw;
+        height: 30vh;
+    }
+
+}
+
+@media (max-width:900px) {
+    .Profile .box {
+        height: 40vh;
+        width: 100vw;
+    }
+
+}
+
+/* button css */
+.green-btn{
+    background-color: green;
+    color: white;
+    border:1px solid white;
+}
+
+.red-btn{
+    background-color: red;
+    color: white;
+    border:1px solid white;
+}
+
+/* modal css for logout*/
+
+.modal-container {
+    position: fixed;
+    width: 38%;
+    height: 20%;
+    background-color: white;
+    color: black;
+    left: 30%;
+    padding: 2vh;
+    padding-top: 3vh;
+    top: 20%;
+    border-radius: 2vh;
+    text-align: center;
+    border: 10px solid rgb(215, 206, 206);
+}
+
+.modal-container button {
+    border: none;
+    cursor: pointer;
+    margin: 2vh;
+    /* padding: 10px; */
+    width: 30%;
+    border-radius: 5%;
+    height: 25%;
+}
+
+.modal-container button:hover {
+    background-color: black;
+    color: white;
+}
+
+.model-wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgb(189, 189, 189, 0.9);
+}
+
+@media (max-width:1200px) {
+    .modal-container {
+        width: 64%;
+        height: 22%;
+        left: 10%;
+        padding: 1vh;
+        font-size: 2vh;
+        padding-top: 2vh;
+    }
+
+    .modal-container button {
+        margin: 1vh;
+        width: 20%;
+        border-radius: 5%;
+        height: 20%;
+    }
+}
+
+@media (max-width:700px) {
+    .modal-container {
+        width: 70%;
+        height: 18%;
+        left: 10%;
+        padding: 1vh;
+    }
+}
+
+
+/* modal 2nd */
+.modal-container1 {
+    position: fixed;
+    width: 60%;
+    height:60%;
+    background-color: white;
+    color: black;
+    left: 20%;
+    padding: 2vh;
+    padding-top: 3vh;
+    padding-left: 5vw;
+    top: 20%;
+    border-radius: 2vh;
+    /* text-align: center; */
+    border: 10px solid rgb(215, 206, 206);
+    overflow-y:scroll;
+}
+
+.modal-container1 h4{
+    margin: 10px;
+}
+
+.modal-container1 h5{
+    margin: 10px;
+}
+
+.modal-container1 button {
+    border: none;
+    cursor: pointer;
+    margin: 2vh;
+    /* padding: 10px; */
+    width: 30%;
+    border-radius: 5%;
+    height: 25%;
+}
+
+.modal-container1 button:hover {
+    background-color: black;
+    color: white;
+}
+
+.model-wrapper1 {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgb(189, 189, 189, 0.9);
+}
+
+.modal-container1 .box{
+    text-align: left;
+}
+
+@media (max-width:1200px) {
+    .modal-container1 {
+        width: 64%;
+        height: 22%;
+        left: 10%;
+        padding: 1vh;
+        font-size: 2vh;
+        padding-top: 2vh;
+    }
+
+    .modal-container1 button {
+        margin: 1vh;
+        width: 20%;
+        border-radius: 5%;
+        height: 20%;
+    }
+}
+
+@media (max-width:700px) {
+    .modal-container1 {
+        width: 70%;
+        height: 18%;
+        left: 10%;
+        padding: 1vh;
+    }
+}
+
+/* login css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+html{
+  font-size: 10px;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+
+}
+
+.login-main{
+  display: flex;
+}
+
+.login-left{
+  flex-grow: 1;
+  height: 100vh;
+  background-color: #E9E9E9;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-left img{
+  width: 400px;
+}
+
+.login-right{
+
+  height: 100vh;
+
+  flex-grow: 1;
+
+
+}
+
+.login-right-container{
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.login-right form{
+  display: flex;
+  flex-direction: column;
+}
+
+.login-logo{
+  align-self: center;
+  padding-top: 50px;
+}
+
+.login-center{
+  margin: auto 0;
+}
+
+.login-logo img{
+  width: 50px;
+}
+
+.login-center h2{
+  font-size: 3.5rem;
+}
+
+.login-center{
+  text-align: center;
+}
+
+.login-center p{
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+form input[type='email'],
+form input[type='password'],
+form input[type='text']
+ {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 0px;
+  border-bottom: 1px solid black;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.pass-input-div{
+  position: relative;
+}
+
+.pass-input-div svg{
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 35px;
+  cursor: pointer;
+  outline: none;
+}
+
+form button[type='button'] {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+
+.login-center-options{
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-div{
+  display:flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.remember-div label{
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.forgot-pass-link{
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.forgot-pass-link:hover{
+  text-decoration: underline;
+}
+
+.login-center-buttons{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.login-center-buttons button:nth-child(1){
+  background-color: black;
+  color: white;
+  border: 3px solid black;
+}
+
+.login-center-buttons button:nth-child(1):hover{
+  color: #333;
+  background-color: white;
+}
+
+.login-center-buttons button:nth-child(2){
+  background-color: #F0F0F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.login-center-buttons button:nth-child(2) img{
+  width: 30px;
+}
+
+.login-center-buttons button:nth-child(2):hover{
+  background-color: #c4c4c457;
+}
+
+.login-bottom-p{
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 40px;
+}
+
+.login-bottom-p a{
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-bottom-p a:hover{
+  text-decoration: underline;
+}
+
+@media(max-width: 900px){
+    .login-left{
+        display: none;
+    }   
+}
+
+@media(max-width: 370px){
+    .login-center-options{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    .login-center-buttons{
+        margin-top: 20px;
+    }
+
+    .login-center h2{
+        font-size: 3rem;
+    }
+
+    .login-center p{
+        font-size: 1.5rem;
+    }
+
+}
+
+
